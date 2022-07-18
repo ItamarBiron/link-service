@@ -63,7 +63,7 @@ yarn docker:test
 To view the list of available APIs and their specifications, run the server and go to `http://localhost:3000/v1/docs` in your browser. This documentation page is automatically generated using the [swagger](https://swagger.io/) definitions written as comments in the route files.
 
 ## Usage
-1. Run the dockers with ```yarn docker:dev``` of locally with  ```yarn dev```
+1. Run the dockers with ```yarn docker:dev``` or locally with  ```yarn dev```
 2. Open the swagger/other client  and use the register route for creating new user
 3. Copy the bearer token from the response and use inside header in all request from now.
 
