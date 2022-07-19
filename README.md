@@ -1,5 +1,5 @@
 # RESTful API Node Server:  Link - Service
-Link-service is a service that save all your favorits links and there metadata.
+Link-service is a service that saves all your favorites links and their metadata.
 
 ## Manual Installation
 

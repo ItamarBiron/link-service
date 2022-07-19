@@ -25,7 +25,7 @@ const getUrlMetadata = async (url) => {
 };
 
 /**
- * Create url metadata object in Metadat DB if not already exist, by request to internet
+ * Create url metadata object in Metadata DB if not already exist, by request to internet
  * @param {string} url
  * @returns {object} metadata
  */
@@ -37,7 +37,7 @@ async function createMetatdataFromUrl(url) {
 }
 
 /**
- * Create a user
+ * Create a link
  * @param {Object} linkBody
  * @returns {Promise<Link>}
  */
@@ -69,7 +69,7 @@ const queryLinks = async (filter, options) => {
 };
 
 /**
- * Get userLink by user id and link id
+ * Get link by user id and link id
  * @param {ObjectId} userId
  * @param {ObjectId} linkId
  * @returns {Promise<Link>}

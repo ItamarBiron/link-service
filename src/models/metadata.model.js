@@ -19,9 +19,8 @@ const metadataSchema = mongoose.Schema(
 );
 
 /**
- * Check if link url in already exist for the current user
- * @param {string} url - The link url
- * @param {string} [excludeUserId] - The id of the user to be excluded
+ * Check if metadata url in already exist is metadata collection
+ * @param {string} url - The metadata url
  * @returns {Promise<boolean>}
  */
 metadataSchema.statics.isUrlMetadataExist = async function (url) {

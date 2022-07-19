@@ -40,7 +40,7 @@ linkSchema.index({ userId: 1, url: 1 }, { unique: true });
 /**
  * Check if link url in already exist for the current user
  * @param {string} url - The link url
- * @param {string} [excludeUserId] - The id of the user to be excluded
+ * @param {string} userId - The id of the user
  * @returns {Promise<boolean>}
  */
 linkSchema.statics.isUrlTaken = async function (url, userId) {
