@@ -3,6 +3,7 @@ const urlMetadata = require('url-metadata');
 const { Link } = require('../models');
 const { Metadata } = require('../models');
 const ApiError = require('../utils/ApiError');
+const logger = require('../config/logger');
 
 /**
  * Get url metadata with requset
@@ -17,8 +18,8 @@ const getUrlMetadata = async (url) => {
     },
     function (error) {
       // failure handler
-      throw new ApiError(httpStatus.INTERNAL_SERVER_ERROR, `Could not get metadata for url ${url}
-       error:${error}`);
+      logger.info(`Could not get metadata for url ${url}, error:${error}`);
+      newMetaData = null;
     }
   );
   return newMetaData;

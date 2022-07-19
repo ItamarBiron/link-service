@@ -25,7 +25,7 @@ const linkSchema = mongoose.Schema(
     },
     metadata: {
       type: Object,
-      required: true,
+      required: false,
       trim: false,
     },
   },
